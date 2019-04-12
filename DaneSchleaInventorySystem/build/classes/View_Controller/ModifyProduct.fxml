@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="535.0" prefWidth="900.0" style="-fx-background-color: lightgrey;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="View_Controller.ModifyProductController">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="503.0" prefWidth="876.0" style="-fx-border-color: grey; -fx-border-radius: 5;">
+         <children>
+            <Label layoutX="63.0" layoutY="41.0" text="Modify Product" textFill="#0000ae">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="461.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleModProductSearch" prefHeight="32.0" prefWidth="76.0" style="-fx-border-color: black; -fx-border-radius: 3;" text="Search">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="modProductSearch" layoutX="549.0" layoutY="39.0" prefHeight="20.0" prefWidth="190.0" style="-fx-border-color: black;" />
+            <VBox layoutX="33.0" layoutY="94.0" prefHeight="225.0" prefWidth="38.0">
+               <children>
+                  <Label text="ID">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Name">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Inv">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Price">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label text="Max">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <TextField fx:id="modProductIDField" layoutX="100.0" layoutY="106.0" />
+            <TextField fx:id="modProductNameField" layoutX="100.0" layoutY="149.0" />
+            <TextField fx:id="modProductInvField" layoutX="100.0" layoutY="194.0" prefHeight="25.0" prefWidth="65.0" />
+            <TextField fx:id="modProductPriceField" layoutX="100.0" layoutY="239.0" prefHeight="25.0" prefWidth="65.0" />
+            <TextField fx:id="modProductMaxField" layoutX="100.0" layoutY="283.0" prefHeight="25.0" prefWidth="65.0" />
+            <TextField fx:id="modProductMinField" layoutX="223.0" layoutY="283.0" prefHeight="25.0" prefWidth="65.0" />
+            <Label layoutX="184.0" layoutY="288.0" text="Min">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <TableView fx:id="vModProductAdd" layoutX="361.0" layoutY="76.0" prefHeight="120.0" prefWidth="460.0">
+              <columns>
+                <TableColumn fx:id="vModProductAddID" prefWidth="115.0" text="Part ID" />
+                <TableColumn fx:id="vModProductAddName" prefWidth="115.0" text="Part Name" />
+                  <TableColumn fx:id="vModProductAddInv" prefWidth="115.0" text="Inventory Level" />
+                  <TableColumn fx:id="vModProductAddPrice" prefWidth="115.0" text="Price per Unit" />
+              </columns>
+            </TableView>
+            <Button layoutX="729.0" layoutY="208.0" mnemonicParsing="false" onAction="#handleModProductAddButton" prefHeight="32.0" prefWidth="76.0" style="-fx-border-color: black; -fx-border-radius: 3;" text="Add">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="vModProductDelete" layoutX="361.0" layoutY="259.0" prefHeight="120.0" prefWidth="460.0">
+               <columns>
+                  <TableColumn fx:id="vModProductDeleteID" prefWidth="115.0" text="Part ID" />
+                  <TableColumn fx:id="vModProductDeleteName" prefWidth="115.0" text="Part Name" />
+                  <TableColumn fx:id="vModProductDeleteInv" prefWidth="115.0" text="Inventory Level" />
+                  <TableColumn fx:id="vModProductDeletePrice" prefWidth="115.0" text="Price per Unit" />
+               </columns>
+            </TableView>
+            <Button layoutX="637.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleModProductSaveButton" prefHeight="32.0" prefWidth="76.0" style="-fx-border-color: black; -fx-border-radius: 3;" text="Save">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="729.0" layoutY="448.0" mnemonicParsing="false" onAction="#handleModProductCancel" prefHeight="32.0" prefWidth="76.0" style="-fx-border-color: black; -fx-border-radius: 3;" text="Cancel">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="729.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleModProductDeleteButton" prefHeight="32.0" prefWidth="76.0" style="-fx-border-color: black; -fx-border-radius: 3;" text="Delete">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
