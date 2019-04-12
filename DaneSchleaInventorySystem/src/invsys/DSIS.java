@@ -16,9 +16,9 @@ public class DSIS extends Application {
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(DSIS.class.getResource("/View_Controller/MainScreen.fxml"));
-        Parent root = loader.load();
+        Parent main = loader.load();
     
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(main);
         
         stage.setScene(scene);
         stage.show();
