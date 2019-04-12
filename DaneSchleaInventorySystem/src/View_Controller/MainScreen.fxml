@@ -130,8 +130,8 @@
                   <TableView fx:id="vProducts" layoutX="10.0" layoutY="50.0" prefHeight="209.0" prefWidth="430.0">
                      <columns>
                         <TableColumn fx:id="vProductsIDColumn" prefWidth="100.0" text="Product ID" />
-                        <TableColumn fx:id="vProdcutsNameColumn" prefWidth="100.0" text="Product Name" />
-                        <TableColumn fx:id="vProdcutsInvColumn" prefWidth="110.0" text="Inventory Level" />
+                        <TableColumn fx:id="vProductsNameColumn" prefWidth="100.0" text="Product Name" />
+                        <TableColumn fx:id="vProductsInvColumn" prefWidth="110.0" text="Inventory Level" />
                         <TableColumn fx:id="vProductsPriceColumn" prefWidth="120.0" text="Price Per Unit" />
                      </columns>
                   </TableView>
