@@ -66,16 +66,16 @@ public class AddPartController implements Initializable {
     @FXML
     void addPartInHouseRadio(ActionEvent event){
         isOutsourced = false;
-        dynLabel.setText("Company Name");
-        dynTextField.setPromptText("Company Name");
+        dynLabel.setText("Machine ID");
+        dynTextField.setPromptText("Machine ID");
         radioOutsourced.setSelected(false);
     }
     
     @FXML
     void addPartOutsourcedRadio(ActionEvent event){
         isOutsourced = true;
-        dynLabel.setText("Machine ID");
-        dynTextField.setPromptText("Machine ID");
+        dynLabel.setText("Company Name");
+        dynTextField.setPromptText("Company Name");
         radioInHouse.setSelected(true);
     }
     
